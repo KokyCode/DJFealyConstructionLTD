@@ -60,7 +60,7 @@ Custom Home Builds
 
 Contact Us
 
-📍 Location: Limerick, Ireland📞 Phone: 087 388 4289 📧 Email: djfealy1971@gmail.com🌐 Website: djfealyltdconstruction.ie
+📍 Location: Limerick, Ireland📞 Phone: 087 388 4289 📧 Email: djfealy1971@gmail.com🌐 Website: N/A
 
-For more details or to get a free quote, visit our website or call us today!
+Logo Colors: #c21d2e, #a2a2a3 and black
 

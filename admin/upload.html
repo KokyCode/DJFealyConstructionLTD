@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Upload - DJ Fealy Construction</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="admin-container">
+      <div class="admin-form">
+        <h1>Admin Upload</h1>
+
+        <!-- Login Form -->
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="password">Admin Password</label>
+            <input type="password" id="password" required />
+          </div>
+          <button type="submit">Login</button>
+        </form>
+
+        <!-- Upload Section -->
+        <div id="uploadSection" class="upload-section" style="display: none">
+          <div class="upload-area" id="dropZone">
+            <input
+              type="file"
+              id="fileInput"
+              multiple
+              accept="image/*"
+              style="display: none"
+            />
+            <div class="upload-content">
+              <i class="fas fa-cloud-upload-alt"></i>
+              <p>Drag and drop images here or click to select</p>
+              <p class="upload-hint">
+                Supported formats: JPG, PNG, GIF (max 5MB each)
+              </p>
+            </div>
+          </div>
+
+          <div id="previewContainer" class="preview-container"></div>
+
+          <button id="uploadButton" class="upload-button" disabled>
+            Upload Images
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="admin.js"></script>
+  </body>
+</html>
