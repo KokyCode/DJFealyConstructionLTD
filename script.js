@@ -208,19 +208,7 @@ const counterObserver = new IntersectionObserver(
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
         const target = parseInt(entry.target.getAttribute("data-target")) || 0;
-        const suffix = target === 98 ? "%" : "+";
-        let count = 0;
-        const updateCount = () => {
-          const increment = target / 50; // Adjust speed
-          if (count < target) {
-            count += increment;
-            entry.target.textContent = Math.ceil(count) + suffix;
-            requestAnimationFrame(updateCount);
-          } else {
-            entry.target.textContent = target + suffix;
-          }
-        };
-        updateCount();
+        entry.target.textContent = target + (target === 98 ? "%" : "+");
         counterObserver.unobserve(entry.target);
       }
     });
